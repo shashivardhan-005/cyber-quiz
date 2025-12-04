@@ -32,15 +32,15 @@
             foreach($responses as $idx => $resp): 
         ?>
             <div class="response-item">
-                <div class="question"><?= esc($resp['id'] ?? ($idx + 1)) ?>. <?= esc($resp['question']) ?></div>
+                <div class="question"><?= esc($resp['q'] ?? ($idx + 1)) ?>. <?= esc($resp['text'] ?? $resp['question'] ?? 'Question Text Missing') ?></div>
                 <div class="answer">
-                    User Answer: <span class="<?= $resp['is_correct'] ? 'correct' : 'incorrect' ?>">
-                        <?= esc($resp['selected']) ?>
+                    User Answer: <span class="<?= ($resp['correct'] ?? $resp['is_correct'] ?? false) ? 'correct' : 'incorrect' ?>">
+                        <?= esc($resp['userAnswer'] ?? $resp['selected'] ?? 'N/A') ?>
                     </span>
                 </div>
-                <?php if(!$resp['is_correct']): ?>
+                <?php if(!($resp['correct'] ?? $resp['is_correct'] ?? false)): ?>
                     <div class="answer" style="color:green;">
-                        Correct Answer: <?= esc($resp['correct_answer']) ?>
+                        Correct Answer: <?= esc($resp['correctAnswer'] ?? $resp['correct_answer'] ?? 'N/A') ?>
                     </div>
                 <?php endif; ?>
             </div>

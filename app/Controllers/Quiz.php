@@ -40,12 +40,16 @@ class Quiz extends Controller {
         $json = $request->getJSON();
         
         $score = $json->score;
-        $responses = isset($json->responses) ? json_encode($json->responses) : null;
+        $responses = isset($json->responses) ? json_encode($json->responses) : (isset($json->details) ? json_encode($json->details) : null);
         
         $email = $this->session->get('user_id'); 
         $full_name = $this->session->get('full_name');
         $device = $this->session->get('device_type');
         $screen = $this->session->get('screen_size');
+
+        if (!$email || !$full_name) {
+            return $this->response->setStatusCode(401)->setJSON(['status' => 'error', 'message' => 'Session expired or invalid.']);
+        }
 
         $data = [
             'full_name'   => $full_name,

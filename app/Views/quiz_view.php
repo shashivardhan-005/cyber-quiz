@@ -252,188 +252,7 @@
         document.querySelector('.quiz-container').style.filter = 'none';
         
         // Re-render with the selected questions (though they are selected at init)
-        renderQ();
-        startTimer();
-    }
-
-    function startTimer() {
-        let startTime = sessionStorage.getItem('quizStartTime');
-        if (!startTime) {
-            startTime = Date.now();
-            sessionStorage.setItem('quizStartTime', startTime);
-        }
-
-        timerInterval = setInterval(() => {
-            const now = Date.now();
-            const elapsed = Math.floor((now - startTime) / 1000);
-            const remaining = TIME_LIMIT - elapsed;
-
-            if (remaining <= 0) {
-                clearInterval(timerInterval);
-                document.getElementById('timer').innerText = "00:00";
-                submitQuiz('Time Expired');
-            } else {
-                const minutes = Math.floor(remaining / 60);
-                const seconds = remaining % 60;
-                document.getElementById('timer').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-            }
-        }, 1000);
-    }
-
-    // Monitor Full Screen Exit
-    document.addEventListener('fullscreenchange', (event) => {
-        if (!document.fullscreenElement && !isSubmitting) {
-            // Show Warning Modal
-            document.getElementById('fullscreen-warning-modal').style.display = 'flex';
-            document.querySelector('.quiz-container').style.filter = 'blur(5px)';
-        }
-    });
-
-    function resumeFullscreen() {
-        const elem = document.documentElement;
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        /* Modals */
-        .modal-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6); z-index: 2000; display: none;
-            backdrop-filter: blur(5px);
-            align-items: center; justify-content: center;
-        }
-        .modal-box {
-            background: white; padding: 40px; border-radius: 16px; max-width: 450px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .modal-btn { margin: 15px 5px; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: 0.2s; }
-        .btn-primary { background: var(--secondary-gradient); color: white; }
-        .btn-danger { background: var(--accent-error); color: white; }
-        
-        #timer {
-            font-size: 1.2rem; font-weight: bold; color: var(--accent-error); 
-            border: 2px solid var(--accent-error); padding: 6px 15px; border-radius: 8px;
-            background: #fff1f2;
-        }
-    </style>
-</head>
-<body>
-
-<div id="start-overlay">
-    <div id="start-box">
-        <h1 style="color:var(--primary); margin-bottom:20px;">Ready to Begin?</h1>
-        <p style="font-size:1.1rem; line-height:1.6; color:#64748b; margin-bottom:30px;">
-            This assessment requires <strong>Full Screen Mode</strong>.
-            <br>
-            The test has a <strong>10-minute time limit</strong>.
-            <br>
-            If you exit full screen, the test will be <strong>automatically submitted</strong>.
-        </p>
-        <button class="btn" onclick="startTest()" style="width:100%; font-size:1.1rem;">Start Assessment</button>
-    </div>
-</div>
-
-<div class="quiz-container fade-in" style="filter: blur(5px);">
-    <!-- QUIZ INTERFACE -->
-    <div id="quiz-ui">
-        <!-- Question Palette -->
-        <div class="palette-grid" id="palette-container"></div>
-
-        <div class="question-header">
-            <h2 id="q-number" style="margin:0; color:var(--primary);">Question 1</h2>
-            <div id="timer">10:00</div>
-        </div>
-
-        <p id="q-text" style="font-size:1.2rem; margin-bottom:30px; color:#334155; line-height:1.6;"></p>
-
-        <!-- DYNAMIC VISUAL CONTAINER -->
-        <div id="visual-container"></div>
-
-        <div id="options-container"></div>
-        
-        <div id="error-msg" style="color: var(--accent-error); font-weight: bold; margin-top: 15px; display: none; text-align:center;">
-            Please select an answer to proceed.
-        </div>
-
-        <div style="margin-top:30px; display:flex; justify-content:space-between; align-items:center;">
-            <button id="prev-btn" class="btn-nav btn-prev" onclick="prevQuestion()">Previous</button>
-            <button id="next-btn" class="btn-nav btn-next" onclick="nextQuestion()">Next Question</button>
-        </div>
-    </div>
-
-    <!-- RESULT INTERFACE -->
-    <div id="result-ui" style="display:none;">
-        <h1 style="color:var(--primary); margin-bottom:10px;">Training Completed</h1>
-        <p style="color:#64748b;">Your responses have been securely recorded.</p>
-        
-        <div class="score-circle">
-            <span id="final-score">0%</span>
-        </div>
-        
-        <h3 id="pass-fail-msg" style="font-size:1.5rem; margin-bottom:10px;"></h3>
-        <p id="auto-submit-msg" style="color: var(--accent-error); font-weight: bold; display: none;"></p>
-        
-        <div id="detailed-results" style="text-align: left; margin-top: 30px; max-height: 400px; overflow-y: auto; padding: 10px; border: 1px solid #e2e8f0; border-radius: 8px; display:none;">
-            <!-- Detailed results will be injected here -->
-        </div>
-
-        <a href="<?= base_url('logout') ?>" class="btn logout-btn">Logout System</a>
-    </div>
-</div>
-
-<!-- MODALS -->
-<div id="fullscreen-warning-modal" class="modal-overlay">
-    <div class="modal-box">
-        <h2 style="color:var(--accent-error); margin-bottom:15px;">⚠️ Full Screen Exited</h2>
-        <p style="margin-bottom:25px; color:#64748b;">You are required to stay in full screen mode to maintain the integrity of the assessment.</p>
-        <button class="modal-btn btn-primary" onclick="resumeFullscreen()">Resume Quiz</button>
-        <button class="modal-btn btn-danger" onclick="confirmExitSubmit()">Submit Quiz</button>
-    </div>
-</div>
-
-<div id="submission-check-modal" class="modal-overlay">
-    <div class="modal-box">
-        <h2 style="color:var(--primary); margin-bottom:15px;">Unanswered Questions</h2>
-        <p id="unanswered-list" style="margin-bottom:20px; color:#64748b; font-weight:500;"></p>
-        <p style="margin-bottom:25px;">Are you sure you want to submit?</p>
-        <button class="modal-btn btn-primary" onclick="closeModal('submission-check-modal')">Review</button>
-        <button class="modal-btn btn-danger" onclick="submitQuiz()">Submit Anyway</button>
-    </div>
-</div>
-
-
-<script src="<?= base_url('public/js/questions.js') ?>?v=<?= time() ?>"></script>
-<script>
-    let questions = [];
-    let currentIdx = 0;
-    let answers = {};
-    let visited = new Set();
-    let isSubmitting = false;
-    let timerInterval;
-    const TIME_LIMIT = 10 * 60; // 10 minutes in seconds
-
-    function initQuestions() {
-        if (typeof QUESTION_POOL === 'undefined') {
-            console.error("QUESTION_POOL is not defined!");
-            alert("Error loading questions. Please refresh the page.");
-            return;
-        }
-        // Shuffle and select 15
-        const shuffled = [...QUESTION_POOL].sort(() => 0.5 - Math.random());
-        questions = shuffled.slice(0, 15);
-    }
-
-    function startTest() {
-        const elem = document.documentElement;
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) { /* Safari */
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE11 */
-            elem.msRequestFullscreen();
-        }
-
-        document.getElementById('start-overlay').style.display = 'none';
-        document.querySelector('.quiz-container').style.filter = 'none';
-        
-        // Re-render with the selected questions (though they are selected at init)
+        sessionStorage.removeItem('quizStartTime');
         renderQ();
         startTimer();
     }
@@ -708,6 +527,138 @@
         // Render Visual
         const visualContainer = document.getElementById('visual-container');
         visualContainer.innerHTML = getVisualHTML(q.visualType, q.content);
+
+        // Render Options
+        const optDiv = document.getElementById('options-container');
+        optDiv.innerHTML = '';
+        q.options.forEach((opt, idx) => {
+            const div = document.createElement('div');
+            div.className = 'option-item';
+            div.innerText = opt;
+            if (answers[currentIdx] === idx) div.classList.add('selected');
+            div.onclick = () => selectAnswer(idx);
+            optDiv.appendChild(div);
+        });
+
+        // Update Buttons
+        document.getElementById('prev-btn').disabled = (currentIdx === 0);
+        const nextBtn = document.getElementById('next-btn');
+        if (currentIdx === questions.length - 1) {
+            nextBtn.innerText = 'Submit Assessment';
+            nextBtn.onclick = () => showSubmissionCheck();
+        } else {
+            nextBtn.innerText = 'Next Question';
+            nextBtn.onclick = nextQuestion;
+        }
+    }
+
+    function selectAnswer(idx) {
+        answers[currentIdx] = idx;
+        renderQ(false);
+    }
+
+    function jumpToQuestion(idx) {
+        currentIdx = idx;
+        renderQ();
+    }
+
+    function nextQuestion() {
+        if (answers[currentIdx] === undefined) {
+            document.getElementById('error-msg').style.display = 'block';
+            return;
+        }
+        document.getElementById('error-msg').style.display = 'none';
+        
+        if (currentIdx < questions.length - 1) {
+            currentIdx++;
+            renderQ();
+        }
+    }
+
+    function prevQuestion() {
+        document.getElementById('error-msg').style.display = 'none';
+        if (currentIdx > 0) {
+            currentIdx--;
+            renderQ();
+        }
+    }
+
+    function showSubmissionCheck() {
+        if (answers[currentIdx] === undefined) {
+             document.getElementById('error-msg').style.display = 'block';
+             return;
+        }
+        document.getElementById('error-msg').style.display = 'none';
+
+        const unanswered = questions.length - Object.keys(answers).length;
+        if (unanswered > 0) {
+            const list = [];
+            questions.forEach((_, i) => {
+                if (answers[i] === undefined) list.push(i + 1);
+            });
+            document.getElementById('unanswered-list').innerText = "Questions: " + list.join(', ');
+            document.getElementById('submission-check-modal').style.display = 'flex';
+        } else {
+            submitQuiz();
+        }
+    }
+
+    function submitQuiz(reason = null) {
+        isSubmitting = true;
+        clearInterval(timerInterval);
+        
+        // Hide Modals
+        document.getElementById('submission-check-modal').style.display = 'none';
+        document.getElementById('fullscreen-warning-modal').style.display = 'none';
+        document.querySelector('.quiz-container').style.filter = 'none';
+        
+        // Calculate Score
+        let score = 0;
+        let results = [];
+        
+        questions.forEach((q, idx) => {
+            const isCorrect = (answers[idx] === q.correct);
+            if (isCorrect) score++;
+            results.push({
+                q: idx + 1,
+                text: q.text,
+                correct: isCorrect,
+                userAnswer: q.options[answers[idx]] || 'Skipped',
+                correctAnswer: q.options[q.correct]
+            });
+        });
+        
+        const percentage = Math.round((score / questions.length) * 100);
+        const passed = percentage >= 80; // 80% passing
+        
+        // UI Update
+        document.getElementById('quiz-ui').style.display = 'none';
+        document.getElementById('result-ui').style.display = 'block';
+        document.getElementById('final-score').innerText = percentage + '%';
+        document.getElementById('pass-fail-msg').innerText = passed ? "PASSED" : "FAILED";
+        document.getElementById('pass-fail-msg').style.color = passed ? "var(--accent-success)" : "var(--accent-error)";
+        
+        if (reason) {
+            const autoMsg = document.getElementById('auto-submit-msg');
+            autoMsg.innerText = "Auto-submitted: " + reason;
+            autoMsg.style.display = 'block';
+        }
+
+        // Send to Backend
+        fetch('<?= base_url("save-result") ?>', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                score: percentage,
+                details: results
+            })
+        }).catch(err => console.error(err));
+        
+        // Exit Fullscreen
+        if (document.fullscreenElement && document.exitFullscreen) {
+            document.exitFullscreen().catch(err => console.log("Exit fullscreen failed: ", err));
+        }
+    }
     // 1. Disable Copy/Paste/Context Menu
     document.addEventListener('contextmenu', event => event.preventDefault());
     document.addEventListener('copy', event => event.preventDefault());

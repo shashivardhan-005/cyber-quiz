@@ -21,6 +21,7 @@ $routes->get('logout', 'Auth::logout');               // Logs out anyone
 $routes->get('quiz/instructions', 'Quiz::instructions'); // Shows Instructions
 $routes->get('quiz/start', 'Quiz::start');               // Starts the Quiz
 $routes->post('quiz/submit', 'Quiz::submit');            // Saves the Score
+$routes->post('save-result', 'Quiz::submit');            // Alias for save-result
 
 // ADMIN ROUTES
 $routes->get('dashboard', 'Admin::dashboard');           // Admin Panel

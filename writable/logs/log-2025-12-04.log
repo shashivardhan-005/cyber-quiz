@@ -44,3 +44,165 @@ INFO - 2025-12-04 07:39:29 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-12-04 07:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-12-04 07:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-12-04 07:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-04 13:21:56 --> ErrorException: Undefined array key "question"
+[Method: GET, Route: admin/result_details/44]
+in APPPATH\Views\admin_result_details.php on line 35.
+ 1 APPPATH\Views\admin_result_details.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "question"', 'C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin_result_details', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin_result_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->result_details('44')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:22:46 --> ErrorException: Undefined array key "question"
+[Method: GET, Route: admin/result_details/44]
+in APPPATH\Views\admin_result_details.php on line 35.
+ 1 APPPATH\Views\admin_result_details.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "question"', 'C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin_result_details', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin_result_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->result_details('44')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-12-04 13:24:25 --> mysqli_sql_exception: Column 'full_name' cannot be null in C:\xampp\htdocs\cyber-quiz\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\cyber-quiz\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `qu...', 0)
+#1 C:\xampp\htdocs\cyber-quiz\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qu...')
+#2 C:\xampp\htdocs\cyber-quiz\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\cyber-quiz\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qu...', Array, false)
+#4 C:\xampp\htdocs\cyber-quiz\app\Controllers\Quiz.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\cyber-quiz\system\CodeIgniter.php(933): App\Controllers\Quiz->submit()
+#6 C:\xampp\htdocs\cyber-quiz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+#7 C:\xampp\htdocs\cyber-quiz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cyber-quiz\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cyber-quiz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\cyber-quiz\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-12-04 13:24:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'full_name' cannot be null
+[Method: POST, Route: save-result]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_takers` (`full_name`, `email`, `score`, `status`, `device_type`, `screen_size`, `responses`) VALUES (:full_name:, :email:, :score:, :status:, :device_type:, :screen_size:, :responses:)', [...], false)
+ 2 APPPATH\Controllers\Quiz.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Quiz->submit()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:24:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'full_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_takers` (`full_name`, `email`, `score`, `status`, `device_type`, `screen_size`, `responses`) VALUES (NULL, NULL, 13, \'Fail\', NULL, NULL, \'[{\\"q\\":1,\\"text\\":\\"A known vendor sends a standard monthly invoice.\\",\\"correct\\":false,\\"userAnswer\\":\\"Ignore\\",\\"correctAnswer\\":\\"Process Payment\\"},{\\"q\\":2,\\"text\\":\\"Popup says \\\'Your PC is infected! Click to clean\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Close Browser\\\\/Tab\\",\\"correctAnswer\\":\\"Close Browser\\\\/Tab\\"},{\\"q\\":3,\\"text\\":\\"Browser freezes with a number to call Microsoft.\\",\\"correct\\":false,\\"userAnswer\\":\\"Restart Router\\",\\"correctAnswer\\":\\"Force Close Browser\\"},{\\"q\\":4,\\"text\\":\\"Disposing of an old company laptop.\\",\\"correct\\":false,\\"userAnswer\\":\\"Give to friend\\",\\"correctAnswer\\":\\"Secure Wipe\\\\/Destroy\\"},{\\"q\\":5,\\"text\\":\\"You are logging into the company payroll portal.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing Attempt\\"},{\\"q\\":6,\\"text\\":\\"You log in to Office 365 and receive a requested MFA prompt.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Enter Code\\"},{\\"q\\":7,\\"text\\":\\"The Ravindranath Yarlagadda messages you on Teams while in a meeting.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing \\\\/ CEO Fraud\\"},{\\"q\\":8,\\"text\\":\\"You set up a new device and are prompted to create a password.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Use complex passphrase\\"},{\\"q\\":9,\\"text\\":\\"You are throwing away a draft contract.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Shredder\\"},{\\"q\\":10,\\"text\\":\\"You receive an SMS from your mobile provider about data usage.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Informational \\\\/ Safe\\"},{\\"q\\":11,\\"text\\":\\"You are entering the secure office building. A colleague swipes their badge ahead of you. What should you do?\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Swipe your own badge\\"},{\\"q\\":12,\\"text\\":\\"You connect to public Wi-Fi and immediately launch the company VPN.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Safe to work\\"},{\\"q\\":13,\\"text\\":\\"You need to share a large file with a client. You use the approved OneDrive link.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Secure Practice\\"},{\\"q\\":14,\\"text\\":\\"Discussing sensitive project details in a crowded elevator.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Avoid sensitive topics\\"},{\\"q\\":15,\\"text\\":\\"Your phone auto-connects to \\\'Free_Airport_WiFi\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Disconnect\\\\/Forget\\",\\"correctAnswer\\":\\"Disconnect\\\\/Forget\\"}]\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_takers` (`full_name`, `email`, `score`, `status`, `device_type`, `screen_size`, `responses`) VALUES (NULL, NULL, 13, \'Fail\', NULL, NULL, \'[{\\"q\\":1,\\"text\\":\\"A known vendor sends a standard monthly invoice.\\",\\"correct\\":false,\\"userAnswer\\":\\"Ignore\\",\\"correctAnswer\\":\\"Process Payment\\"},{\\"q\\":2,\\"text\\":\\"Popup says \\\'Your PC is infected! Click to clean\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Close Browser\\\\/Tab\\",\\"correctAnswer\\":\\"Close Browser\\\\/Tab\\"},{\\"q\\":3,\\"text\\":\\"Browser freezes with a number to call Microsoft.\\",\\"correct\\":false,\\"userAnswer\\":\\"Restart Router\\",\\"correctAnswer\\":\\"Force Close Browser\\"},{\\"q\\":4,\\"text\\":\\"Disposing of an old company laptop.\\",\\"correct\\":false,\\"userAnswer\\":\\"Give to friend\\",\\"correctAnswer\\":\\"Secure Wipe\\\\/Destroy\\"},{\\"q\\":5,\\"text\\":\\"You are logging into the company payroll portal.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing Attempt\\"},{\\"q\\":6,\\"text\\":\\"You log in to Office 365 and receive a requested MFA prompt.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Enter Code\\"},{\\"q\\":7,\\"text\\":\\"The Ravindranath Yarlagadda messages you on Teams while in a meeting.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing \\\\/ CEO Fraud\\"},{\\"q\\":8,\\"text\\":\\"You set up a new device and are prompted to create a password.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Use complex passphrase\\"},{\\"q\\":9,\\"text\\":\\"You are throwing away a draft contract.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Shredder\\"},{\\"q\\":10,\\"text\\":\\"You receive an SMS from your mobile provider about data usage.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Informational \\\\/ Safe\\"},{\\"q\\":11,\\"text\\":\\"You are entering the secure office building. A colleague swipes their badge ahead of you. What should you do?\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Swipe your own badge\\"},{\\"q\\":12,\\"text\\":\\"You connect to public Wi-Fi and immediately launch the company VPN.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Safe to work\\"},{\\"q\\":13,\\"text\\":\\"You need to share a large file with a client. You use the approved OneDrive link.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Secure Practice\\"},{\\"q\\":14,\\"text\\":\\"Discussing sensitive project details in a crowded elevator.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Avoid sensitive topics\\"},{\\"q\\":15,\\"text\\":\\"Your phone auto-connects to \\\'Free_Airport_WiFi\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Disconnect\\\\/Forget\\",\\"correctAnswer\\":\\"Disconnect\\\\/Forget\\"}]\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_takers` (`full_name`, `email`, `score`, `status`, `device_type`, `screen_size`, `responses`) VALUES (:full_name:, :email:, :score:, :status:, :device_type:, :screen_size:, :responses:)', [...], false)
+ 4 APPPATH\Controllers\Quiz.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Quiz->submit()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:24:25 --> [Caused by] mysqli_sql_exception: Column 'full_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `quiz_takers` (`full_name`, `email`, `score`, `status`, `device_type`, `screen_size`, `responses`) VALUES (NULL, NULL, 13, \'Fail\', NULL, NULL, \'[{\\"q\\":1,\\"text\\":\\"A known vendor sends a standard monthly invoice.\\",\\"correct\\":false,\\"userAnswer\\":\\"Ignore\\",\\"correctAnswer\\":\\"Process Payment\\"},{\\"q\\":2,\\"text\\":\\"Popup says \\\'Your PC is infected! Click to clean\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Close Browser\\\\/Tab\\",\\"correctAnswer\\":\\"Close Browser\\\\/Tab\\"},{\\"q\\":3,\\"text\\":\\"Browser freezes with a number to call Microsoft.\\",\\"correct\\":false,\\"userAnswer\\":\\"Restart Router\\",\\"correctAnswer\\":\\"Force Close Browser\\"},{\\"q\\":4,\\"text\\":\\"Disposing of an old company laptop.\\",\\"correct\\":false,\\"userAnswer\\":\\"Give to friend\\",\\"correctAnswer\\":\\"Secure Wipe\\\\/Destroy\\"},{\\"q\\":5,\\"text\\":\\"You are logging into the company payroll portal.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing Attempt\\"},{\\"q\\":6,\\"text\\":\\"You log in to Office 365 and receive a requested MFA prompt.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Enter Code\\"},{\\"q\\":7,\\"text\\":\\"The Ravindranath Yarlagadda messages you on Teams while in a meeting.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing \\\\/ CEO Fraud\\"},{\\"q\\":8,\\"text\\":\\"You set up a new device and are prompted to create a password.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Use complex passphrase\\"},{\\"q\\":9,\\"text\\":\\"You are throwing away a draft contract.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Shredder\\"},{\\"q\\":10,\\"text\\":\\"You receive an SMS from your mobile provider about data usage.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Informational \\\\/ Safe\\"},{\\"q\\":11,\\"text\\":\\"You are entering the secure office building. A colleague swipes their badge ahead of you. What should you do?\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Swipe your own badge\\"},{\\"q\\":12,\\"text\\":\\"You connect to public Wi-Fi and immediately launch the company VPN.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Safe to work\\"},{\\"q\\":13,\\"text\\":\\"You need to share a large file with a client. You use the approved OneDrive link.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Secure Practice\\"},{\\"q\\":14,\\"text\\":\\"Discussing sensitive project details in a crowded elevator.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Avoid sensitive topics\\"},{\\"q\\":15,\\"text\\":\\"Your phone auto-connects to \\\'Free_Airport_WiFi\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Disconnect\\\\/Forget\\",\\"correctAnswer\\":\\"Disconnect\\\\/Forget\\"}]\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_takers` (`full_name`, `email`, `score`, `status`, `device_type`, `screen_size`, `responses`) VALUES (NULL, NULL, 13, \'Fail\', NULL, NULL, \'[{\\"q\\":1,\\"text\\":\\"A known vendor sends a standard monthly invoice.\\",\\"correct\\":false,\\"userAnswer\\":\\"Ignore\\",\\"correctAnswer\\":\\"Process Payment\\"},{\\"q\\":2,\\"text\\":\\"Popup says \\\'Your PC is infected! Click to clean\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Close Browser\\\\/Tab\\",\\"correctAnswer\\":\\"Close Browser\\\\/Tab\\"},{\\"q\\":3,\\"text\\":\\"Browser freezes with a number to call Microsoft.\\",\\"correct\\":false,\\"userAnswer\\":\\"Restart Router\\",\\"correctAnswer\\":\\"Force Close Browser\\"},{\\"q\\":4,\\"text\\":\\"Disposing of an old company laptop.\\",\\"correct\\":false,\\"userAnswer\\":\\"Give to friend\\",\\"correctAnswer\\":\\"Secure Wipe\\\\/Destroy\\"},{\\"q\\":5,\\"text\\":\\"You are logging into the company payroll portal.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing Attempt\\"},{\\"q\\":6,\\"text\\":\\"You log in to Office 365 and receive a requested MFA prompt.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Enter Code\\"},{\\"q\\":7,\\"text\\":\\"The Ravindranath Yarlagadda messages you on Teams while in a meeting.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing \\\\/ CEO Fraud\\"},{\\"q\\":8,\\"text\\":\\"You set up a new device and are prompted to create a password.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Use complex passphrase\\"},{\\"q\\":9,\\"text\\":\\"You are throwing away a draft contract.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Shredder\\"},{\\"q\\":10,\\"text\\":\\"You receive an SMS from your mobile provider about data usage.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Informational \\\\/ Safe\\"},{\\"q\\":11,\\"text\\":\\"You are entering the secure office building. A colleague swipes their badge ahead of you. What should you do?\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Swipe your own badge\\"},{\\"q\\":12,\\"text\\":\\"You connect to public Wi-Fi and immediately launch the company VPN.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Safe to work\\"},{\\"q\\":13,\\"text\\":\\"You need to share a large file with a client. You use the approved OneDrive link.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Secure Practice\\"},{\\"q\\":14,\\"text\\":\\"Discussing sensitive project details in a crowded elevator.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Avoid sensitive topics\\"},{\\"q\\":15,\\"text\\":\\"Your phone auto-connects to \\\'Free_Airport_WiFi\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Disconnect\\\\/Forget\\",\\"correctAnswer\\":\\"Disconnect\\\\/Forget\\"}]\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_takers` (`full_name`, `email`, `score`, `status`, `device_type`, `screen_size`, `responses`) VALUES (NULL, NULL, 13, \'Fail\', NULL, NULL, \'[{\\"q\\":1,\\"text\\":\\"A known vendor sends a standard monthly invoice.\\",\\"correct\\":false,\\"userAnswer\\":\\"Ignore\\",\\"correctAnswer\\":\\"Process Payment\\"},{\\"q\\":2,\\"text\\":\\"Popup says \\\'Your PC is infected! Click to clean\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Close Browser\\\\/Tab\\",\\"correctAnswer\\":\\"Close Browser\\\\/Tab\\"},{\\"q\\":3,\\"text\\":\\"Browser freezes with a number to call Microsoft.\\",\\"correct\\":false,\\"userAnswer\\":\\"Restart Router\\",\\"correctAnswer\\":\\"Force Close Browser\\"},{\\"q\\":4,\\"text\\":\\"Disposing of an old company laptop.\\",\\"correct\\":false,\\"userAnswer\\":\\"Give to friend\\",\\"correctAnswer\\":\\"Secure Wipe\\\\/Destroy\\"},{\\"q\\":5,\\"text\\":\\"You are logging into the company payroll portal.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing Attempt\\"},{\\"q\\":6,\\"text\\":\\"You log in to Office 365 and receive a requested MFA prompt.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Enter Code\\"},{\\"q\\":7,\\"text\\":\\"The Ravindranath Yarlagadda messages you on Teams while in a meeting.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Phishing \\\\/ CEO Fraud\\"},{\\"q\\":8,\\"text\\":\\"You set up a new device and are prompted to create a password.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Use complex passphrase\\"},{\\"q\\":9,\\"text\\":\\"You are throwing away a draft contract.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Shredder\\"},{\\"q\\":10,\\"text\\":\\"You receive an SMS from your mobile provider about data usage.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Informational \\\\/ Safe\\"},{\\"q\\":11,\\"text\\":\\"You are entering the secure office building. A colleague swipes their badge ahead of you. What should you do?\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Swipe your own badge\\"},{\\"q\\":12,\\"text\\":\\"You connect to public Wi-Fi and immediately launch the company VPN.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Safe to work\\"},{\\"q\\":13,\\"text\\":\\"You need to share a large file with a client. You use the approved OneDrive link.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Secure Practice\\"},{\\"q\\":14,\\"text\\":\\"Discussing sensitive project details in a crowded elevator.\\",\\"correct\\":false,\\"userAnswer\\":\\"Skipped\\",\\"correctAnswer\\":\\"Avoid sensitive topics\\"},{\\"q\\":15,\\"text\\":\\"Your phone auto-connects to \\\'Free_Airport_WiFi\\\'.\\",\\"correct\\":true,\\"userAnswer\\":\\"Disconnect\\\\/Forget\\",\\"correctAnswer\\":\\"Disconnect\\\\/Forget\\"}]\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_takers` (`full_name`, `email`, `score`, `status`, `device_type`, `screen_size`, `responses`) VALUES (:full_name:, :email:, :score:, :status:, :device_type:, :screen_size:, :responses:)', [...], false)
+ 5 APPPATH\Controllers\Quiz.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Quiz->submit()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:25:51 --> ErrorException: Undefined array key "question"
+[Method: GET, Route: admin/result_details/45]
+in APPPATH\Views\admin_result_details.php on line 35.
+ 1 APPPATH\Views\admin_result_details.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "question"', 'C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin_result_details', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin_result_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->result_details('45')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:29:23 --> ErrorException: Undefined array key "question"
+[Method: GET, Route: admin/result_details/47]
+in APPPATH\Views\admin_result_details.php on line 35.
+ 1 APPPATH\Views\admin_result_details.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "question"', 'C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin_result_details', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin_result_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->result_details('47')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:30:20 --> ErrorException: Undefined array key "question"
+[Method: GET, Route: admin/result_details/47]
+in APPPATH\Views\admin_result_details.php on line 35.
+ 1 APPPATH\Views\admin_result_details.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "question"', 'C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin_result_details', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin_result_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->result_details('47')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:30:45 --> ErrorException: Undefined array key "question"
+[Method: GET, Route: admin/result_details/48]
+in APPPATH\Views\admin_result_details.php on line 35.
+ 1 APPPATH\Views\admin_result_details.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "question"', 'C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin_result_details', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin_result_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->result_details('48')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:31:13 --> ErrorException: Undefined array key "question"
+[Method: GET, Route: admin/result_details/46]
+in APPPATH\Views\admin_result_details.php on line 35.
+ 1 APPPATH\Views\admin_result_details.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "question"', 'C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin_result_details', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin_result_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->result_details('46')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-04 13:32:08 --> ErrorException: Undefined array key "text"
+[Method: GET, Route: admin/result_details/40]
+in APPPATH\Views\admin_result_details.php on line 35.
+ 1 APPPATH\Views\admin_result_details.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "text"', 'C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\cyber-quiz\\app\\Views\\admin_result_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin_result_details', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin_result_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->result_details('40')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
