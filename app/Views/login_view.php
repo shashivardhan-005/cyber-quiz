@@ -46,12 +46,27 @@
             input.value = screen_size;
             form.appendChild(input);
 
-            // Auto-redirect to admin login
+            // Secure Auto-redirect check
             let nameInput = document.querySelector('input[name="full_name"]');
             if (nameInput) {
                 nameInput.addEventListener('input', function(e) {
-                    if (e.target.value.trim().toLowerCase() === 'admin') {
-                        window.location.href = '<?= base_url('admin_login') ?>';
+                    let val = e.target.value.trim();
+                    if(val.length > 0) {
+                        fetch('<?= base_url('check_user') ?>', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded',
+                                'X-Requested-With': 'XMLHttpRequest'
+                            },
+                            body: 'full_name=' + encodeURIComponent(val)
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.status === 'redirect' && data.url) {
+                                window.location.href = data.url;
+                            }
+                        })
+                        .catch(err => console.error('Error:', err));
                     }
                 });
             }

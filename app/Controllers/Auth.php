@@ -68,6 +68,18 @@ class Auth extends Controller {
         return redirect()->to('quiz/instructions');
     }
 
+    public function check_user()
+    {
+        $request = \Config\Services::request();
+        $full_name = trim($request->getPost('full_name'));
+
+        if (strtolower($full_name) === 'admin') {
+            return $this->response->setJSON(['status' => 'redirect', 'url' => base_url('admin_login')]);
+        }
+
+        return $this->response->setJSON(['status' => 'ok']);
+    }
+
     // 3. Show Admin Login Page
     public function admin_login_view()
     {

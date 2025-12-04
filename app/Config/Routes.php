@@ -12,6 +12,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Auth::index');                     // Shows User Login
 $routes->post('login', 'Auth::login');                // Processes User Login
+$routes->post('check_user', 'Auth::check_user');      // AJAX Check User
 $routes->get('admin_login', 'Auth::admin_login_view');// Shows Admin Login
 $routes->post('admin_attempt', 'Auth::admin_attempt');// Processes Admin Login
 $routes->get('logout', 'Auth::logout');               // Logs out anyone
