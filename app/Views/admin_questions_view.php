@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Viyona Fintech | Admin</title>
+    <title>Cyber Security Awareness Quiz</title>
     <link rel="icon" type="image/png" href="<?= base_url('public/favicon.png') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url('public/style.css') ?>">
@@ -198,7 +198,7 @@
                 <div class="browser-mock">
                     <div class="browser-tabs">
                         <div class="browser-tab">
-                            <span style="font-size:0.8rem;">📄</span> ${content.url.substring(0, 20)}... <span style="margin-left:auto; font-size:0.7rem;">✕</span>
+                            <span style="font-size:0.8rem;">📄</span> ${content.tabName || content.url.substring(0, 20) + '...'} <span style="margin-left:auto; font-size:0.7rem;">✕</span>
                         </div>
                         <div style="padding:8px; color:#5f6368;">+</div>
                     </div>
@@ -243,6 +243,74 @@
                     <div class="poster-header">${content.header}</div>
                     <div class="poster-body">${content.body}</div>
                     ${content.qrImage ? `<div style="margin-top:20px;"><img src="<?= base_url() ?>/${content.qrImage}" alt="QR Code" style="width:150px; height:150px; border:1px solid #333;"></div>` : (content.qr ? '<div style="margin-top:20px; background:#000; color:#fff; display:inline-block; padding:15px; font-family:monospace;">[QR CODE]</div>' : '')}
+                </div>`;
+                break;
+            case 'whatsapp':
+                html = `
+                <div class="whatsapp-mock">
+                    <div class="whatsapp-header">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <i class="fas fa-arrow-left"></i>
+                            <div class="whatsapp-avatar"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="whatsapp-info">
+                            <div class="whatsapp-name">${content.sender}</div>
+                            <div class="whatsapp-status">online</div>
+                        </div>
+                        <div style="display:flex; gap:15px;">
+                            <i class="fas fa-video"></i>
+                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="whatsapp-body">
+                        <div style="background:#e1f5fe; color:#333; padding:5px 10px; border-radius:5px; align-self:center; font-size:12px; margin-bottom:10px; box-shadow:0 1px 1px rgba(0,0,0,0.1);">
+                            Messages are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them.
+                        </div>
+                        <div class="whatsapp-message received">
+                            ${content.msg}
+                            <div class="whatsapp-time">10:42 AM</div>
+                        </div>
+                    </div>
+                    <div class="whatsapp-input-area">
+                        <i class="far fa-smile" style="color:#666; font-size:20px;"></i>
+                        <input type="text" class="whatsapp-input" placeholder="Message" disabled>
+                        <i class="fas fa-paperclip" style="color:#666; font-size:20px; margin:0 10px;"></i>
+                        <i class="fas fa-camera" style="color:#666; font-size:20px;"></i>
+                        <div style="width:40px; height:40px; background:#075e54; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-left:5px;">
+                            <i class="fas fa-microphone" style="color:white;"></i>
+                        </div>
+                    </div>
+                </div>`;
+                break;
+            case 'screenshot':
+                html = `
+                <div class="screenshot-mock" style="text-align:center; margin-top:15px;">
+                    <img src="<?= base_url() ?>/${content.image}" alt="Screenshot" style="max-width:100%; border:1px solid #ddd; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
+                </div>`;
+                break;
+            case 'popup':
+                html = `
+                <div class="popup-mock">
+                    <div class="popup-window">
+                        <div class="popup-header">
+                            <div class="popup-title">${content.header}</div>
+                            <div class="popup-controls">
+                                <div class="popup-control"></div>
+                                <div class="popup-control"></div>
+                                <div class="popup-control close"></div>
+                            </div>
+                        </div>
+                        <div class="popup-body">
+                            <div class="popup-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="popup-message">${content.body}</div>
+                            <div class="popup-subtext">${content.subtext || ''}</div>
+                            <div class="popup-actions">
+                                <button class="popup-btn primary">${content.buttonText || 'OK'}</button>
+                                <button class="popup-btn">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>`;
                 break;
         }

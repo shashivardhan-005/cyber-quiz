@@ -929,3 +929,237 @@ tr:hover {
 .btn-danger:hover {
     background: #e11d48;
 }
+
+/* 6. WhatsApp Style */
+.whatsapp-mock {
+    max-width: 360px;
+    margin: 0 auto 20px;
+    background: #e5ddd5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.whatsapp-header {
+    background-color: #075e54;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.whatsapp-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #075e54;
+    font-size: 20px;
+}
+
+.whatsapp-info {
+    flex: 1;
+}
+
+.whatsapp-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.whatsapp-status {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.whatsapp-body {
+    flex: 1;
+    padding: 20px;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.whatsapp-message {
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    align-self: flex-start;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.4;
+    position: relative;
+}
+
+.whatsapp-message.received {
+    background-color: white;
+    border-top-left-radius: 0;
+}
+
+.whatsapp-message.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    border-top-right-radius: 0;
+}
+
+.whatsapp-time {
+    font-size: 10px;
+    color: #999;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.whatsapp-input-area {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsapp-input {
+    flex: 1;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+/* 7. Popup Style */
+.popup-mock {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.popup-window {
+    background: #fff;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid #999;
+    font-family: 'Segoe UI', sans-serif;
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 10;
+}
+
+.popup-header {
+    background: #fff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.popup-title {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.popup-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.popup-control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.popup-control.close {
+    background: #ff5f56;
+}
+
+.popup-body {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.popup-icon {
+    font-size: 3.5rem;
+    color: #dc2626;
+    margin-bottom: 15px;
+}
+
+.popup-message {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.popup-subtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.popup-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.popup-btn {
+    padding: 8px 24px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.popup-btn:hover {
+    background: #e0e0e0;
+}
+
+.popup-btn.primary {
+    background: #0078d4;
+    color: white;
+    border-color: #0078d4;
+}
+
+.popup-btn.primary:hover {
+    background: #0063b1;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

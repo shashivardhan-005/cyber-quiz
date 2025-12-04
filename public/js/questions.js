@@ -64,6 +64,7 @@ const QUESTION_POOL = [
         visualType: "browser",
         content: {
             url: "https://outlook.0ffice.com/securitycheck",
+            tabName: "Sign in to Outlook",
             secure: false,
             html: "<h3>Sign in</h3><a href='https://outlook.0ffice.com/securitycheck'>to continue to Outlook</a>"
         },
@@ -91,6 +92,7 @@ const QUESTION_POOL = [
         visualType: "browser",
         content: {
             url: "file://Downloads/Invoice.pdf",
+            tabName: "Invoice.pdf",
             secure: false,
             html: "<div style='background:#eee; padding:20px; border:1px dashed #333;'><strong>Secured Document</strong><br><br><button style='background:#d32f2f; color:white; border:none; padding:10px;'>Click to Unlock Content</button></div>"
         },
@@ -104,6 +106,7 @@ const QUESTION_POOL = [
         visualType: "browser",
         content: {
             url: "https://payroll.vifyonafintech.corn/login",
+            tabName: "Employee Login",
             secure: true,
             html: "<h3>Employee Login</h3><p>Enter credentials safely.</p>"
         },
@@ -177,7 +180,7 @@ const QUESTION_POOL = [
         type: "Network Security",
         text: "You connect to public Wi-Fi and immediately launch the company VPN.",
         visualType: "browser",
-        content: { url: "fortinet.com", secure: true, html: "<h3>VPN Connected</h3><p>Tunnel Established</p>" },
+        content: { url: "fortinet.com", tabName: "FortiClient VPN", secure: true, html: "<h3>VPN Connected</h3><p>Tunnel Established</p>" },
         options: ["Safe to work", "Unsafe", "Disconnect VPN", "Use Tor"],
         correct: 0
     },
@@ -204,7 +207,7 @@ const QUESTION_POOL = [
         type: "System Maintenance",
         text: "Windows prompts you to restart for a scheduled update.",
         visualType: "browser",
-        content: { url: "Windows Update", secure: true, html: "<h3>Restart Required</h3><p>Official Update</p>" },
+        content: { url: "Windows Update", tabName: "Windows Update", secure: true, html: "<h3>Restart Required</h3><p>Official Update</p>" },
         options: ["Restart Now", "Ignore", "Disable Updates", "Unplug PC"],
         correct: 0
     },
@@ -222,7 +225,7 @@ const QUESTION_POOL = [
         type: "Social Engineering",
         text: "A stranger on LinkedIn asks for your company's internal directory.",
         visualType: "browser",
-        content: { url: "LinkedIn.com", secure: true, html: "<div style='padding:10px; border:1px solid #ccc;'><strong>Recruiter</strong><br>Hey, can you share the employee list?</div>" },
+        content: { url: "LinkedIn.com", tabName: "LinkedIn | Feed", secure: true, html: "<div style='padding:10px; border:1px solid #ccc;'><strong>Recruiter</strong><br>Hey, can you share the employee list?</div>" },
         options: ["Share it", "Refuse/Report", "Ask why", "Send partial list"],
         correct: 1
     },
@@ -231,7 +234,7 @@ const QUESTION_POOL = [
         type: "Malware",
         text: "Your screen turns red and demands Bitcoin to unlock files.",
         visualType: "browser",
-        content: { url: "LOCKED", secure: false, html: "<h1 style='color:red'>FILES ENCRYPTED</h1>" },
+        content: { url: "LOCKED", tabName: "YOUR FILES ARE ENCRYPTED", secure: false, html: "<h1 style='color:red'>FILES ENCRYPTED</h1>" },
         options: ["Pay Ransom", "Disconnect & Call IT", "Restart PC", "Email Attacker"],
         correct: 1
     },
@@ -249,7 +252,7 @@ const QUESTION_POOL = [
         type: "Data Security",
         text: "You need to share a large file with a client. You use the approved OneDrive link.",
         visualType: "browser",
-        content: { url: "OneDrive - Corporate", secure: true, html: "<h3>Share File</h3><p>Authorized Sharing</p>" },
+        content: { url: "viyonafintech-my.sharepoint.com", tabName: "OneDrive", secure: true, html: "<h3>Share File</h3><p>Authorized Sharing</p>" },
         options: ["Secure Practice", "Unsafe", "Use Personal Email", "Use USB"],
         correct: 0
     },
@@ -303,7 +306,7 @@ const QUESTION_POOL = [
         type: "Password Security",
         text: "You set up a new device and are prompted to create a password.",
         visualType: "browser",
-        content: { url: "https://unifiedservices.viyonafintech.com/", secure: true, html: "<h3>Create Password</h3><p>Enter new password</p>" },
+        content: { url: "https://unifiedservices.viyonafintech.com/", tabName: "Create Password", secure: true, html: "<h3>Create Password</h3><p>Enter new password</p>" },
         options: ["Use 'password123'", "Use complex passphrase", "Use your name", "Skip step"],
         correct: 1
     },
@@ -330,7 +333,7 @@ const QUESTION_POOL = [
         type: "Malware",
         text: "Excel file asks to 'Enable Content' to view data.",
         visualType: "browser",
-        content: { url: "excel.cloud.microsoft", secure: true, html: "<button>Enable Macros</button>" },
+        content: { url: "excel.cloud.microsoft", tabName: "Excel for web", secure: true, html: "<button>Enable Macros</button>" },
         options: ["Enable", "Don't Enable", "Ask IT", "Save as PDF"],
         correct: 1
     },
@@ -353,7 +356,7 @@ const QUESTION_POOL = [
         type: "Productivity Tools",
         text: "IT pushes a notification to install the new company password manager.",
         visualType: "browser",
-        content: { url: "Company Portal", secure: true, html: "<h3>Install Approved App</h3><p>Verified by IT</p>" },
+        content: { url: "Company Portal", tabName: "Company Portal", secure: true, html: "<h3>Install Approved App</h3><p>Verified by IT</p>" },
         options: ["Install", "Ignore", "Report as Spam", "Uninstall Browser"],
         correct: 0
     },
@@ -361,8 +364,8 @@ const QUESTION_POOL = [
     {
         type: "Data Leak",
         text: "You need to send a credit card number to a colleague.",
-        visualType: "outlook",
-        content: { from: "You", subject: "CC Info", body: "Here is the number..." },
+        visualType: "screenshot",
+        content: { image: "public/images/outlook_screenshot.png" },
         options: ["Send in plain text", "Don't send via email", "Send in two emails", "Write backwards"],
         correct: 1
     },
@@ -370,9 +373,14 @@ const QUESTION_POOL = [
     {
         type: "Malware",
         text: "Popup says 'Your PC is infected! Click to clean'.",
-        visualType: "browser",
-        content: { url: "Scanner", secure: false, html: "<h1 style='color:red'>VIRUS DETECTED</h1>" },
-        options: ["Click Clean", "Close Browser/Tab", "Download Tool", "Call number"],
+        visualType: "popup",
+        content: {
+            header: "System Security Alert",
+            body: "VIRUS DETECTED! Your system is infected with Trojan.Win32.Generic.",
+            subtext: "Immediate action required to prevent data loss.",
+            buttonText: "Clean Now"
+        },
+        options: ["Click on Clean Now", "Close Browser/Tab", "Download Tool", "Call number"],
         correct: 1
     },
     // 37. LinkedIn Scraping
@@ -402,21 +410,21 @@ const QUESTION_POOL = [
         options: ["Throw in trash", "Secure Wipe/Destroy", "Give to friend", "Sell on eBay"],
         correct: 1
     },
-    // 40. Remote Access
+    // 40. WhatsApp Phishing
     {
-        type: "Remote Access",
-        text: "You are working remotely from a hotel and need to access the intranet.",
-        visualType: "browser",
-        content: { url: "Cisco AnyConnect", secure: true, html: "<h3>VPN Connected</h3><p>Secured Connection</p>" },
-        options: ["Safe to proceed", "Unsafe", "Use Hotel PC", "Turn off VPN"],
-        correct: 0
+        type: "Social Engineering",
+        text: "You receive a WhatsApp message from an unknown number claiming to be your CEO.",
+        visualType: "whatsapp",
+        content: { sender: "+91 98765 43210", msg: "Hi, I lost my phone. This is my new number. I need you to make an urgent wire transfer for a vendor. Can you handle this now?" },
+        options: ["Process transfer", "Verify via official channel", "Reply asking for details", "Ignore"],
+        correct: 1
     },
     // 41. Fake Invoice
     {
         type: "Fraud",
         text: "Invoice from unknown vendor for 'SEO Services'.",
         visualType: "outlook",
-        content: { from: "Billing", subject: "Invoice Overdue", body: "Pay $500 now." },
+        content: { from: "Billing", subject: "Invoice Overdue", body: "<p>Pay $500 now.</p><br><p><a href='http://abcd.com/'>Click here to pay</a></p>" },
         options: ["Pay it", "Verify validity", "Forward to CEO", "Ignore"],
         correct: 1
     },
@@ -425,7 +433,7 @@ const QUESTION_POOL = [
         type: "Social Engineering",
         text: "Browser freezes with a number to call Microsoft.",
         visualType: "browser",
-        content: { url: "Support", secure: false, html: "<h1>Call 1-800-FIX-PC</h1>" },
+        content: { url: "support.abcd.com", tabName: "Microsoft Support", secure: false, html: "<h1>Call 9390770480</h1>" },
         options: ["Call Number", "Force Close Browser", "Restart Router", "Pay fee"],
         correct: 1
     },
@@ -461,7 +469,12 @@ const QUESTION_POOL = [
         type: "Service Alert",
         text: "You receive an SMS from your mobile provider about data usage.",
         visualType: "sms",
-        content: { sender: "Verizon", msg: "You have used 90% of your data plan. No action required." },
+        content: {
+            sender: "JD-JIOFBR-S", msg: `ALERT!
+You have used 50% of the available 1000 GB Data from your AirFiber_599_3M plan with JioFixedVoice Number +918418956541 as of 28-Nov-25 23:48 Hrs.
+Your Current Data balance is : 200.0 GB
+Valid till : 01-Dec-25 00:00 Hrs.
+You can easily track your Data usage on MyJio App, click <a href="www.jio.com/GetMyJio">www.jio.com/GetMyJio</a>` },
         options: ["Informational / Safe", "Phishing Attempt", "Click Link (None)", "Reply STOP"],
         correct: 0
     },
@@ -470,7 +483,7 @@ const QUESTION_POOL = [
         type: "Vulnerability",
         text: "News of a major browser vulnerability. No patch yet.",
         visualType: "browser",
-        content: { url: "News", secure: true, html: "<h3>Zero Day Exploit</h3>" },
+        content: { url: "News", tabName: "Tech News Daily", secure: true, html: "<h3>Zero Day Exploit</h3>" },
         options: ["Keep using", "Switch Browser/Wait for patch", "Disable internet", "Run antivirus"],
         correct: 1
     },
@@ -480,7 +493,7 @@ const QUESTION_POOL = [
         text: "Co-worker downloading large amounts of data before resigning.",
         visualType: "poster",
         content: { header: "Activity", body: "Downloading..." },
-        options: ["Ignore", "Report to Security", "Ask them why", "Help them"],
+        options: ["Ignore", "Report to Security", "Ask them why", "Upload to Darkweb"],
         correct: 1
     },
     // 49. Clear Text Passwords
@@ -498,7 +511,7 @@ const QUESTION_POOL = [
         text: "Caller claims to be Help Desk needing your password to fix an issue.",
         visualType: "poster",
         content: { header: "Call", body: "Give Password?" },
-        options: ["Give it", "Never give password", "Give temporary one", "Ask supervisor"],
+        options: ["Give it", "Never share your password", "Give temporary one", "Ask supervisor"],
         correct: 1
     }
 ];

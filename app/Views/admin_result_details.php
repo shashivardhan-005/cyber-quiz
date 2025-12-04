@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Viyona Fintech | Admin</title>
+    <title>Cyber Security Awareness Quiz</title>
     <link rel="icon" type="image/png" href="<?= base_url('public/favicon.png') ?>">
     <style>
         body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f4f6f9; }
