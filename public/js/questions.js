@@ -20,7 +20,7 @@ const QUESTION_POOL = [
         text: "HR sends an email about a salary slip you weren't expecting.",
         visualType: "outlook",
         content: {
-            from: "Human Resources &lt;HR@VIY0NAFINTECH.COM&gt;",
+            from: "Human Resources &lt;HR@VIY0NAFINTECH.C0M&gt;",
             subject: "SalarySlip_November",
             body: "Please review the attached slip for discrepancies.",
             attachment: "SalarySlip_Nov.pdf.exe",
@@ -48,7 +48,7 @@ const QUESTION_POOL = [
         text: "A known vendor sends a standard monthly invoice.",
         visualType: "outlook",
         content: {
-            from: "Billing &lt;billing@trusted-vendor.com&gt;",
+            from: "Billing &lt;billing@aws.com&gt;",
             subject: "Invoice #10234",
             body: "Attached is your monthly invoice. Please process payment by the 30th.",
             attachment: "Inv_10234.pdf",
@@ -63,9 +63,9 @@ const QUESTION_POOL = [
         text: "You clicked a security alert link. Check the browser URL.",
         visualType: "browser",
         content: {
-            url: "http://security-check-office365.net/login",
+            url: "https://outlook.0ffice.com/securitycheck",
             secure: false,
-            html: "<h3>Sign in</h3><p>to continue to Outlook</p>"
+            html: "<h3>Sign in</h3><a href='https://outlook.0ffice.com/securitycheck'>to continue to Outlook</a>"
         },
         options: ["Login", "Phishing Attempt", "Reset Password", "Close Browser"],
         correct: 1
@@ -76,7 +76,7 @@ const QUESTION_POOL = [
         text: "You received a generic prize notification.",
         visualType: "outlook",
         content: {
-            from: "Office Admin &lt;rewards@promo-prizes.com&gt;",
+            from: "Office Admin &lt;ADMIN@VIY0NAFINTECH.C0M&gt;",
             subject: "CONGRATULATIONS! You won!",
             body: "You have been selected for a $500 Amazon Gift Card. Click here to claim before it expires.",
             external: true
@@ -90,7 +90,7 @@ const QUESTION_POOL = [
         text: "You opened an invoice PDF and it asks you to click to unlock.",
         visualType: "browser",
         content: {
-            url: "file://Downloads/Invoice_882.pdf",
+            url: "file://Downloads/Invoice.pdf",
             secure: false,
             html: "<div style='background:#eee; padding:20px; border:1px dashed #333;'><strong>Secured Document</strong><br><br><button style='background:#d32f2f; color:white; border:none; padding:10px;'>Click to Unlock Content</button></div>"
         },
@@ -116,8 +116,8 @@ const QUESTION_POOL = [
         text: "You receive an SMS alert about your bank account.",
         visualType: "sms",
         content: {
-            sender: "BankAlert",
-            msg: "Your account is locked due to suspicious activity. Unlock now: bit.ly/bank-unlock-now"
+            sender: "IDFCFB-S",
+            msg: "Your account is locked due to suspicious activity. Unlock now: <a href='https://bit.ly/bank-unlock-now'>bit.ly/bank-unlock-now</a>"
         },
         options: ["Click Link", "Phishing / Smishing", "Reply STOP", "Call Bank"],
         correct: 1
@@ -130,7 +130,8 @@ const QUESTION_POOL = [
         content: {
             header: "HOLIDAY BONUS",
             body: "Scan QR to login and claim your holiday bonus!",
-            qr: true
+            qr: true,
+            qrImage: 'public/images/qr_code.png'
         },
         options: ["Scan immediately", "Phishing Attempt", "Verify with HR", "Ignore"],
         correct: 2
@@ -176,7 +177,7 @@ const QUESTION_POOL = [
         type: "Network Security",
         text: "You connect to public Wi-Fi and immediately launch the company VPN.",
         visualType: "browser",
-        content: { url: "VPN Client", secure: true, html: "<h3>VPN Connected</h3><p>Tunnel Established</p>" },
+        content: { url: "fortinet.com", secure: true, html: "<h3>VPN Connected</h3><p>Tunnel Established</p>" },
         options: ["Safe to work", "Unsafe", "Disconnect VPN", "Use Tor"],
         correct: 0
     },
@@ -221,7 +222,7 @@ const QUESTION_POOL = [
         type: "Social Engineering",
         text: "A stranger on LinkedIn asks for your company's internal directory.",
         visualType: "browser",
-        content: { url: "LinkedIn", secure: true, html: "<div style='padding:10px; border:1px solid #ccc;'><strong>Recruiter?</strong><br>Hey, can you share the employee list?</div>" },
+        content: { url: "LinkedIn.com", secure: true, html: "<div style='padding:10px; border:1px solid #ccc;'><strong>Recruiter</strong><br>Hey, can you share the employee list?</div>" },
         options: ["Share it", "Refuse/Report", "Ask why", "Send partial list"],
         correct: 1
     },
@@ -266,7 +267,7 @@ const QUESTION_POOL = [
         type: "Authentication",
         text: "You log in to Office 365 and receive a requested MFA prompt.",
         visualType: "sms",
-        content: { sender: "Microsoft", msg: "Use code 592834 for verification." },
+        content: { sender: "+9157575888", msg: "Use code 592834 for verification." },
         options: ["Enter Code", "Report as Fraud", "Ignore", "Delete Account"],
         correct: 0
     },
@@ -275,7 +276,7 @@ const QUESTION_POOL = [
         type: "Social Engineering",
         text: "You receive an email from a vendor requesting an urgent change to their payment bank account details.",
         visualType: "outlook",
-        content: { from: "Vendor &lt;vendor@gmail.com&gt;", subject: "Urgent Change", body: "Please update info now." },
+        content: { from: "Amazon &lt;amazon@gmail.com&gt;", subject: "Urgent Change", body: "Please update info now." },
         options: ["Update", "Verify via official channel", "Reply OK", "Forward to Finance"],
         correct: 1
     },
@@ -302,7 +303,7 @@ const QUESTION_POOL = [
         type: "Password Security",
         text: "You set up a new device and are prompted to create a password.",
         visualType: "browser",
-        content: { url: "Setup Wizard", secure: true, html: "<h3>Create Password</h3><p>Enter new password</p>" },
+        content: { url: "https://unifiedservices.viyonafintech.com/", secure: true, html: "<h3>Create Password</h3><p>Enter new password</p>" },
         options: ["Use 'password123'", "Use complex passphrase", "Use your name", "Skip step"],
         correct: 1
     },
@@ -320,7 +321,7 @@ const QUESTION_POOL = [
         type: "Email Fraud",
         text: "Email from Ravindranath Yarlagadda asking for W-2 forms of all employees.",
         visualType: "outlook",
-        content: { from: "Ravindranath Yarlagadda &lt;RAVI@VIY0NAFINTECH.COM&gt;", subject: "W2 Request", body: "Send pdfs now." },
+        content: { from: "Ravindranath Yarlagadda &lt;RAVI@VIY0NAFINTECH.C0M&gt;", subject: "W2 Request", body: "<p>make a document of all your team members details and uplode it <a href='http://abcd.com/'>Here</a> as soon as possible.</p>" },
         options: ["Send files", "Verify request", "Reply asking why", "Ignore"],
         correct: 1
     },
@@ -329,7 +330,7 @@ const QUESTION_POOL = [
         type: "Malware",
         text: "Excel file asks to 'Enable Content' to view data.",
         visualType: "browser",
-        content: { url: "Excel Online", secure: true, html: "<button>Enable Macros</button>" },
+        content: { url: "excel.cloud.microsoft", secure: true, html: "<button>Enable Macros</button>" },
         options: ["Enable", "Don't Enable", "Ask IT", "Save as PDF"],
         correct: 1
     },
@@ -338,7 +339,12 @@ const QUESTION_POOL = [
         type: "Quishing",
         text: "Email asks to scan QR code to update 2FA.",
         visualType: "outlook",
-        content: { from: "Security", subject: "2FA Update", body: "Scan this QR code." },
+        content: {
+            from: "Security",
+            subject: "2FA Update",
+            body: "Scan this QR code to update the 2FA otherwise your account will be locked.",
+            qrImage: 'public/images/qr_code.png'
+        },
         options: ["Scan it", "Verify source", "Forward to home", "Print it"],
         correct: 1
     },

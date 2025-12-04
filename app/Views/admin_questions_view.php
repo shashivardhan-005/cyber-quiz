@@ -73,7 +73,7 @@
         <a href="<?= base_url('dashboard') ?>" class="btn-back">Back to Dashboard</a>
     </div>
 
-    <script src="<?= base_url('public/js/questions.js') ?>"></script>
+    <script src="<?= base_url('public/js/questions.js') ?>?v=<?= time() ?>"></script>
     <script>
         function downloadQuestionsPDF() {
             const { jsPDF } = window.jspdf;
@@ -153,6 +153,7 @@
                             <div class="outlook-body">
                                 ${content.external ? '<div class="external-banner">⚠️ <strong>External Sender</strong> - Be careful with links and attachments.</div>' : ''}
                                 <p>${content.body}</p>
+                                ${content.qrImage ? `<div style="margin-top:15px;"><img src="<?= base_url() ?>/${content.qrImage}" alt="QR Code" style="width:150px; height:150px; border:1px solid #ccc;"></div>` : ''}
                                 ${content.linkText ? `<a href="#" style="color:#0078d4; text-decoration:underline;">${content.linkText}</a>` : ''}
                                 ${content.attachment ? `<div class="attachment-pill">📎 ${content.attachment}</div>` : ''}
                             </div>
@@ -241,7 +242,7 @@
                 <div class="poster-mock">
                     <div class="poster-header">${content.header}</div>
                     <div class="poster-body">${content.body}</div>
-                    ${content.qr ? '<div style="margin-top:20px; background:#000; color:#fff; display:inline-block; padding:15px; font-family:monospace;">[QR CODE]</div>' : ''}
+                    ${content.qrImage ? `<div style="margin-top:20px;"><img src="<?= base_url() ?>/${content.qrImage}" alt="QR Code" style="width:150px; height:150px; border:1px solid #333;"></div>` : (content.qr ? '<div style="margin-top:20px; background:#000; color:#fff; display:inline-block; padding:15px; font-family:monospace;">[QR CODE]</div>' : '')}
                 </div>`;
                 break;
         }
