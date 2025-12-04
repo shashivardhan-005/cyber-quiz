@@ -1,0 +1,1063 @@
+CRITICAL - 2024-08-20 06:25:51 --> Error: Class "CI_Controller" not found
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 4.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Auth')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Auth')
+ 5 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Auth', true)
+ 6 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:27:20 --> Error: Cannot call constructor
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:27:30 --> Error: Cannot call constructor
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:27:55 --> ErrorException: Undefined property: App\Controllers\Auth::$load
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 8.
+ 1 APPPATH\Controllers\Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 8)
+ 2 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:29:59 --> ErrorException: Undefined property: App\Controllers\Auth::$load
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 9.
+ 1 APPPATH\Controllers\Auth.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:31:28 --> ErrorException: Undefined property: App\Controllers\Auth::$input
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 APPPATH\Controllers\Auth.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$input', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:32:26 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:33:42 --> ErrorException: Undefined variable $request
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 APPPATH\Controllers\Auth.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:34:29 --> ErrorException: Undefined variable $user
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 25.
+ 1 APPPATH\Controllers\Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:34:50 --> Error: Call to a member function row_array() on array
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:35:35 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 25.
+ 1 APPPATH\Controllers\Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:39:35 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 25.
+ 1 APPPATH\Controllers\Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:41:06 --> ErrorException: Undefined property: App\Controllers\Auth::$session
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 APPPATH\Controllers\Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$session', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:41:53 --> ErrorException: Undefined property: App\Controllers\Auth::$session
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 APPPATH\Controllers\Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$session', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:43:41 --> ErrorException: Undefined variable $session
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 APPPATH\Controllers\Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:44:51 --> ErrorException: Undefined variable $session
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 APPPATH\Controllers\Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:56:41 --> ErrorException: Undefined variable $session
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 APPPATH\Controllers\Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:58:19 --> ErrorException: Undefined property: App\Controllers\Auth::$session
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 56.
+ 1 APPPATH\Controllers\Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$session', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:02:46 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: GET, Route: logout]
+in APPPATH\Controllers\Auth.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:42:20 --> ErrorException: Undefined variable $users
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 41.
+ 1 APPPATH\Controllers\Auth.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:43:44 --> ErrorException: Attempt to read property "password" on array
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 41.
+ 1 APPPATH\Controllers\Auth.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "password" on array', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:43:45 --> ErrorException: Attempt to read property "password" on array
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 41.
+ 1 APPPATH\Controllers\Auth.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "password" on array', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:44:45 --> ErrorException: Array to string conversion
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 30.
+ 1 APPPATH\Controllers\Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:56:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login_conflict.php"
+[Method: POST, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/login_conflict.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('auth/login_conflict', [], true)
+ 3 APPPATH\Controllers\Auth.php(43): view('auth/login_conflict', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:57:17 --> ErrorException: Undefined property: App\Controllers\Auth::$input
+[Method: POST, Route: auth/resolve_conflict]
+in APPPATH\Controllers\Auth.php on line 69.
+ 1 APPPATH\Controllers\Auth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$input', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:58:19 --> ErrorException: Undefined variable $request
+[Method: POST, Route: auth/resolve_conflict]
+in APPPATH\Controllers\Auth.php on line 69.
+ 1 APPPATH\Controllers\Auth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:58:28 --> ErrorException: Undefined variable $request
+[Method: POST, Route: auth/resolve_conflict]
+in APPPATH\Controllers\Auth.php on line 69.
+ 1 APPPATH\Controllers\Auth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 07:59:10 --> Error: Call to undefined method CodeIgniter\Session\Session::userdata()
+[Method: POST, Route: auth/resolve_conflict]
+in APPPATH\Controllers\Auth.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:01:53 --> Error: Call to undefined method CodeIgniter\Session\Session::userdata()
+[Method: GET, Route: logout]
+in APPPATH\Controllers\Auth.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:03:20 --> mysqli_sql_exception: Unknown column 'user_sessions' in 'where clause' in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('DELETE FROM `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:03:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_sessions' in 'where clause'
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 2 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:03:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_sessions' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 4 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:03:20 --> [Caused by] mysqli_sql_exception: Unknown column 'user_sessions' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 5 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:04:31 --> mysqli_sql_exception: Unknown column 'user_sessions' in 'where clause' in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('DELETE FROM `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:04:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_sessions' in 'where clause'
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 2 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:04:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_sessions' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 4 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:04:31 --> [Caused by] mysqli_sql_exception: Unknown column 'user_sessions' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 5 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:08:45 --> mysqli_sql_exception: Unknown column 'user_sessions' in 'where clause' in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('DELETE FROM `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:08:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_sessions' in 'where clause'
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 2 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:08:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_sessions' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 4 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:08:45 --> [Caused by] mysqli_sql_exception: Unknown column 'user_sessions' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `user_sessions` IS NULL', [...], false)
+ 5 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('user_sessions')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:08:57 --> mysqli_sql_exception: Unknown column 'sessions_id' in 'where clause' in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('DELETE FROM `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('sessions_id')
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:08:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sessions_id' in 'where clause'
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `sessions_id` IS NULL', [...], false)
+ 2 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('sessions_id')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:08:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sessions_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `sessions_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `sessions_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `sessions_id` IS NULL', [...], false)
+ 4 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('sessions_id')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:08:57 --> [Caused by] mysqli_sql_exception: Unknown column 'sessions_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `sessions_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `sessions_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `user_sessions`
+WHERE `user_id` = \'1\'
+AND `device_type` IS NULL
+AND `sessions_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2823): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_sessions`
+WHERE `user_id` = :user_id:
+AND `device_type` IS NULL
+AND `sessions_id` IS NULL', [...], false)
+ 5 APPPATH\Controllers\Auth.php(77): CodeIgniter\Database\BaseBuilder->delete('sessions_id')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:11:08 --> Error: Call to undefined method CodeIgniter\Session\Session::userdata()
+[Method: POST, Route: auth/resolve_conflict]
+in APPPATH\Controllers\Auth.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:13:07 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 30.
+ 1 APPPATH\Controllers\Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:13:54 --> mysqli_sql_exception: Column 'device_type' cannot be null in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(94): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:13:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'device_type' cannot be null
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 2 APPPATH\Controllers\Auth.php(94): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:13:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'device_type' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:13:54\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:13:54\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 4 APPPATH\Controllers\Auth.php(94): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:13:54 --> [Caused by] mysqli_sql_exception: Column 'device_type' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:13:54\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:13:54\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:13:54\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 5 APPPATH\Controllers\Auth.php(94): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:17:12 --> ErrorException: Undefined variable $session
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 38.
+ 1 APPPATH\Controllers\Auth.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:18:30 --> mysqli_sql_exception: Column 'screen_size' cannot be null in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(96): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:18:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 2 APPPATH\Controllers\Auth.php(96): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:18:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:18:30\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:18:30\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 4 APPPATH\Controllers\Auth.php(96): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:18:30 --> [Caused by] mysqli_sql_exception: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:18:30\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:18:30\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:18:30\', \'ot2kovqgp34p7bfkhfi70kjsf3i6f06f\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 5 APPPATH\Controllers\Auth.php(96): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:21:57 --> mysqli_sql_exception: Column 'screen_size' cannot be null in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:21:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 2 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:21:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:21:57\', \'67ohvuuk43l98o9vidc9og3jgorehpp1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:21:57\', \'67ohvuuk43l98o9vidc9og3jgorehpp1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 4 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:21:57 --> [Caused by] mysqli_sql_exception: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:21:57\', \'67ohvuuk43l98o9vidc9og3jgorehpp1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:21:57\', \'67ohvuuk43l98o9vidc9og3jgorehpp1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:21:57\', \'67ohvuuk43l98o9vidc9og3jgorehpp1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 5 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:23:07 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:23:29 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:23:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:31:07 --> mysqli_sql_exception: Column 'screen_size' cannot be null in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:31:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 2 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:31:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:31:07\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:31:07\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 4 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:31:07 --> [Caused by] mysqli_sql_exception: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:31:07\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:31:07\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:31:07\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 5 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:32:33 --> mysqli_sql_exception: Column 'screen_size' cannot be null in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:32:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 2 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:32:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:32:33\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:32:33\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 4 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:32:33 --> [Caused by] mysqli_sql_exception: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:32:33\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:32:33\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:32:33\', \'gu373jv1db0i4vqjagt1vi2drpr1n5hg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 5 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:33:51 --> mysqli_sql_exception: Column 'device_type' cannot be null in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:33:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'device_type' cannot be null
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 2 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:33:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'device_type' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:33:51\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:33:51\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 4 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:33:51 --> [Caused by] mysqli_sql_exception: Column 'device_type' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:33:51\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:33:51\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', NULL, NULL, \'2024-08-20 08:33:51\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 5 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 08:34:57 --> mysqli_sql_exception: Column 'screen_size' cannot be null in C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\LoginTask\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\LoginTask\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\LoginTask\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\LoginTask\app\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+#6 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\LoginTask\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LoginTask\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LoginTask\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\LoginTask\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 08:34:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+[Method: POST, Route: auth/resolve_conflict]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 2 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:34:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:34:57\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:34:57\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 4 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:34:57 --> [Caused by] mysqli_sql_exception: Column 'screen_size' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:34:57\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:34:57\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (\'1\', \'desktop\', NULL, \'2024-08-20 08:34:57\', \'qjl055ekgngtq4evnfnqcq787jcablm4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_sessions` (`user_id`, `device_type`, `screen_size`, `last_active`, `session_id`) VALUES (:user_id.1:, :device_type.1:, :screen_size:, :last_active:, :session_id:)', [...], false)
+ 5 APPPATH\Controllers\Auth.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->resolve_conflict()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:42:16 --> ErrorException: Undefined variable $user_id
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 39.
+ 1 APPPATH\Controllers\Auth.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:43:25 --> ErrorException: Undefined variable $user_id
+[Method: POST, Route: login]
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 APPPATH\Controllers\Auth.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:47:58 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:48:10 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:48:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:48:48 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:48:49 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login]
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\LoginTask\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
