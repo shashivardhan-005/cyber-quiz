@@ -23,7 +23,29 @@ class Admin extends Controller {
         }
 
         // Get all results
-        $data['results'] = $this->quiz_takers->orderBy('created_at', 'DESC')->get()->getResultArray();
+        // Get all results
+        $results = $this->quiz_takers->orderBy('created_at', 'DESC')->get()->getResultArray();
+
+        // Process results to add marks
+        foreach ($results as &$row) {
+            $correct = 0;
+            $total = 0;
+            
+            if (!empty($row['responses'])) {
+                $responses = json_decode($row['responses'], true);
+                if (is_array($responses)) {
+                    $total = count($responses);
+                    foreach ($responses as $resp) {
+                        if (isset($resp['correct']) && $resp['correct'] == true) {
+                            $correct++;
+                        }
+                    }
+                }
+            }
+            $row['marks'] = "$correct / $total";
+        }
+        
+        $data['results'] = $results;
         
         return view('admin_dashboard', $data);
     }

@@ -59,6 +59,7 @@
                             <th>Full Name</th>
                             <th>Email</th>
                             <th>Score</th>
+                            <th>Marks</th>
                             <th>Status</th>
                             <th>Device</th>
                             <th>Date</th>
@@ -72,6 +73,7 @@
                                 <td><?= esc($row['full_name']) ?></td>
                                 <td><?= esc($row['email']) ?></td>
                                 <td><?= esc($row['score']) ?>%</td>
+                                <td><?= esc($row['marks']) ?></td>
                                 <td><span class="<?= $row['score'] >= 80 ? 'pass' : 'fail' ?>"><?= esc($row['status']) ?></span></td>
                                 <td><?= esc($row['device_type']) ?></td>
                                 <td><?= esc($row['created_at']) ?></td>
@@ -152,19 +154,20 @@
             const table = document.querySelector("table");
             const rows = Array.from(table.querySelectorAll("tbody tr"));
             
-            // Extract data: Name, Email, Score
+            // Extract data: Name, Email, Score, Marks
             const data = rows.map(row => {
                 const cells = row.querySelectorAll("td");
                 if (cells.length < 3) return []; // Skip empty/no-result rows
                 return [
                     cells[0].innerText, // Name
                     cells[1].innerText, // Email
-                    cells[2].innerText  // Score
+                    cells[2].innerText, // Score
+                    cells[3].innerText  // Marks
                 ];
             }).filter(row => row.length > 0);
 
             doc.autoTable({
-                head: [['Full Name', 'Email', 'Score']],
+                head: [['Full Name', 'Email', 'Score', 'Marks']],
                 body: data,
                 startY: 30,
             });
