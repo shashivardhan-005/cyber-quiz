@@ -63,7 +63,7 @@ const QUESTION_POOL = [
         text: "You clicked a security alert link. Check the browser URL.",
         visualType: "browser",
         content: {
-            url: "https://outlook.0ffice.com/securitycheck",
+            url: "outlook.0ffice.com/securitycheck",
             tabName: "Sign in to Outlook",
             secure: false,
             html: "<h3>Sign in</h3><a href='https://outlook.0ffice.com/securitycheck'>to continue to Outlook</a>"
@@ -79,7 +79,7 @@ const QUESTION_POOL = [
         content: {
             from: "Office Admin &lt;ADMIN@VIY0NAFINTECH.C0M&gt;",
             subject: "CONGRATULATIONS! You won!",
-            body: "You have been selected for a $500 Amazon Gift Card. <a href='https://amazon.com'>Click here</a> to claim before it expires.",
+            body: "You have been selected for a $500 Amazon Gift Card. <a href='https://abcd.com'>Click here</a> to claim before it expires.",
             external: true
         },
         options: ["Claim Prize", "Phishing Attempt", "Ask HR", "Ignore"],
@@ -91,7 +91,7 @@ const QUESTION_POOL = [
         text: "You opened an invoice PDF and it asks you to click to unlock.",
         visualType: "browser",
         content: {
-            url: "file://Downloads/Invoice.pdf",
+            url: "Downloads/Invoice.pdf",
             tabName: "Invoice.pdf",
             secure: false,
             html: "<div style='background:#eee; padding:20px; border:1px dashed #333;'><strong>Secured Document</strong><br><br><button style='background:#d32f2f; color:white; border:none; padding:10px;'>Click to Unlock Content</button></div>"
@@ -105,7 +105,7 @@ const QUESTION_POOL = [
         text: "You are logging into the company payroll portal.",
         visualType: "browser",
         content: {
-            url: "https://payroll.vifyonafintech.corn/login",
+            url: "payroll.vifyonafintech.corn/login",
             tabName: "Employee Login",
             secure: true,
             html: "<h3>Employee Login</h3><p>Enter credentials safely.</p>"
@@ -279,7 +279,7 @@ const QUESTION_POOL = [
         type: "Social Engineering",
         text: "You receive an email from a vendor requesting an urgent change to their payment bank account details.",
         visualType: "outlook",
-        content: { from: "Amazon &lt;amazon@gmail.com&gt;", subject: "Urgent Change", body: "Please update info now." },
+        content: { from: "Amazon &lt;amazon@gmail.com&gt;", subject: "Urgent Change", body: "Please update info now <a href='http://abcd.com/'>amazon.com</a>." },
         options: ["Update", "Verify via official channel", "Reply OK", "Forward to Finance"],
         correct: 1
     },
@@ -306,7 +306,7 @@ const QUESTION_POOL = [
         type: "Password Security",
         text: "You set up a new device and are prompted to create a password.",
         visualType: "browser",
-        content: { url: "https://unifiedservices.viyonafintech.com/", tabName: "Create Password", secure: true, html: "<h3>Create Password</h3><p>Enter new password</p>" },
+        content: { url: "unifiedservices.viyonafintech.com/", tabName: "Create Password", secure: true, html: "<h3>Create Password</h3><p>Enter new password</p>" },
         options: ["Use 'password123'", "Use complex passphrase", "Use your name", "Skip step"],
         correct: 1
     },
