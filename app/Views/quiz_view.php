@@ -332,10 +332,13 @@
                                         <div style="font-size:0.8rem; color:#666;">To: You</div>
                                     </div>
                                 </div>
-                                <div class="outlook-email-body">
-                                    ${content.body}
-                                    ${content.qrImage ? `<div style="margin-top:20px;"><img src="<?= base_url() ?>/${content.qrImage}" alt="QR Code" style="width:150px; height:150px; border:1px solid #333;"></div>` : ''}
-                                </div>
+                            </div>
+                            <div class="outlook-body">
+                                ${content.external ? '<div class="external-banner">⚠️ <strong>External Sender</strong> - Be careful with links and attachments.</div>' : ''}
+                                <p>${content.body}</p>
+                                ${content.qrImage ? `<div style="margin-top:15px;"><img src="<?= base_url() ?>/${content.qrImage}" alt="QR Code" style="width:150px; height:150px; border:1px solid #ccc;"></div>` : ''}
+                                ${content.linkText ? `<a href="#" style="color:#0078d4; text-decoration:underline;">${content.linkText}</a>` : ''}
+                                ${content.attachment ? `<div class="attachment-pill">📎 ${content.attachment}</div>` : ''}
                             </div>
                         </div>
                     </div>
