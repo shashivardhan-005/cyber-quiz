@@ -79,7 +79,7 @@ const QUESTION_POOL = [
         content: {
             from: "Office Admin &lt;ADMIN@VIY0NAFINTECH.C0M&gt;",
             subject: "CONGRATULATIONS! You won!",
-            body: "You have been selected for a $500 Amazon Gift Card. Click here to claim before it expires.",
+            body: "You have been selected for a $500 Amazon Gift Card. <a href='https://amazon.com'>Click here</a> to claim before it expires.",
             external: true
         },
         options: ["Claim Prize", "Phishing Attempt", "Ask HR", "Ignore"],
@@ -424,7 +424,7 @@ const QUESTION_POOL = [
         type: "Fraud",
         text: "Invoice from unknown vendor for 'SEO Services'.",
         visualType: "outlook",
-        content: { from: "Billing", subject: "Invoice Overdue", body: "<p>Pay $500 now.</p><br><p><a href='http://abcd.com/'>Click here to pay</a></p>" },
+        content: { from: "Billing", subject: "Invoice Overdue", body: "<p>Pay $500 now.</p><br><p><a href='http://abcd.com/'>Click here</a> to pay</p>" },
         options: ["Pay it", "Verify validity", "Forward to CEO", "Ignore"],
         correct: 1
     },
