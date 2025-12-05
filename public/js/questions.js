@@ -154,7 +154,7 @@ const QUESTION_POOL = [
         text: "You are entering the secure office building. A colleague swipes their badge ahead of you. What should you do?",
         visualType: "poster",
         content: { header: "Entry", body: "Badge Access Required" },
-        options: ["Swipe your own badge", "Tailgate behind them", "Ask them to hold door", "Enter without swiping"],
+        options: ["Swipe your own badge", "Tailgate behind colleague", "Ask them to hold door", "Enter without swiping"],
         correct: 0
     },
     // 13. Unattended Screen
@@ -206,8 +206,8 @@ const QUESTION_POOL = [
     {
         type: "System Maintenance",
         text: "Windows prompts you to restart for a scheduled update.",
-        visualType: "browser",
-        content: { url: "Windows Update", tabName: "Windows Update", secure: true, html: "<h3>Restart Required</h3><p>Official Update</p>" },
+        visualType: "windows_update",
+        content: { header: "Restart required", body: "This update addresses important security issues. Please restart your device to complete the installation." },
         options: ["Restart Now", "Ignore", "Disable Updates", "Unplug PC"],
         correct: 0
     },
@@ -481,7 +481,7 @@ You can easily track your Data usage on MyJio App, click <a href="www.jio.com/Ge
     // 47. Zero Day
     {
         type: "Vulnerability",
-        text: "News of a major browser vulnerability. No patch yet.",
+        text: "News of a major browser vulnerability. No patch available.",
         visualType: "browser",
         content: { url: "News", tabName: "Tech News Daily", secure: true, html: "<h3>Zero Day Exploit</h3>" },
         options: ["Keep using", "Switch Browser/Wait for patch", "Disable internet", "Run antivirus"],
@@ -493,7 +493,7 @@ You can easily track your Data usage on MyJio App, click <a href="www.jio.com/Ge
         text: "Co-worker downloading large amounts of data before resigning.",
         visualType: "poster",
         content: { header: "Activity", body: "Downloading..." },
-        options: ["Ignore", "Report to Security", "Ask them why", "Upload to Darkweb"],
+        options: ["Ignore", "Report to Security", "Ask them why", "Upload on Darkweb"],
         correct: 1
     },
     // 49. Clear Text Passwords

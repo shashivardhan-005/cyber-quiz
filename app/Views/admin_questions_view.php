@@ -289,6 +289,25 @@
                     <img src="<?= base_url() ?>/${content.image}" alt="Screenshot" style="max-width:100%; border:1px solid #ddd; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
                 </div>`;
                 break;
+            case 'windows_update':
+                html = `
+                <div class="windows-update-mock">
+                    <div class="win-update-header">
+                        <i class="fas fa-sync-alt win-update-icon"></i>
+                        <div class="win-update-title">Windows Update</div>
+                    </div>
+                    <div class="win-update-body">
+                        <div class="win-update-status">
+                            <i class="fas fa-exclamation-circle win-update-status-icon"></i>
+                            <div class="win-update-text">
+                                <h4>${content.header || 'Restart required'}</h4>
+                                <p>${content.body || 'Your device needs to restart to install updates. Select a time to restart.'}</p>
+                                <button class="win-update-btn">Restart now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+                break;
             case 'popup':
                 html = `
                 <div class="popup-mock">
